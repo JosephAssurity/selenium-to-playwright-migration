@@ -1,15 +1,15 @@
-Feature: Login
+Feature: Cart
 
   As a user
-  I want to log into SauceDemo
-  So that I can access the products page
+  I want to add and remove products from the cart
+  So that I can manage my shopping
 
-  Scenario: Successful login
-    Given I am on the SauceDemo login page
-    When I login with username "standard_user" and password "secret_sauce"
-    Then I should see the products page
+  Scenario: Add product to cart
+    Given I am logged in to SauceDemo as "standard_user" with password "secret_sauce"
+    When I add the product "Sauce Labs Backpack" to the cart
+    Then the cart badge should show "1"
 
-  Scenario: Invalid login shows an error
-    Given I am on the SauceDemo login page
-    When I login with username "locked_out_user" and password "secret_sauce"
-    Then I should see a login error message
+  Scenario: Remove product from cart
+    Given I have added the product "Sauce Labs Backpack" to the cart
+    When I remove the product "Sauce Labs Backpack" from the cart
+    Then the cart badge should not be visible

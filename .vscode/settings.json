@@ -1,0 +1,9 @@
+{
+    "cucumberautocomplete.steps": [
+        "playwright-migrated/steps/cart.steps.ts",
+        "playwright-migrated/steps/checkout.steps.ts",
+        "playwright-migrated/steps/common.steps.ts",
+        "playwright-migrated/steps/login.steps.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/**/*.feature"
+}

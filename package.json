@@ -1,0 +1,31 @@
+{
+  "name": "selenium-to-playwright-migration",
+  "version": "1.0.0",
+  "description": "This project demonstrates a phased migration strategy from a legacy Selenium BDD automation framework to Playwright while preserving Gherkin feature files.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:pw": "cucumber-js --config playwright-migrated/cucumber.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephAssurity/selenium-to-playwright-migration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephAssurity/selenium-to-playwright-migration/issues"
+  },
+  "homepage": "https://github.com/JosephAssurity/selenium-to-playwright-migration#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
